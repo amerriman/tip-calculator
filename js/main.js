@@ -6,7 +6,7 @@ $(document).on('ready', function() {
   $('#calculate').on("click", function(event){
     event.preventDefault();
     //take the bill total
-    var bill = $('#bill').val();
+    var bill = $('#bill').val().replace("$", "");
     var tipAmount = (bill * 20 / 100).toFixed(2);
     $('#showAmount').html("You should tip " + "$"+tipAmount);
 
