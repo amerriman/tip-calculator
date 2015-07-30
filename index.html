@@ -16,12 +16,33 @@
 
       <h1>Tip Calulator</h1>
       <br>
-      <form action="index_submit" method="get" accept-charset="utf-8">
-        <input type="text" placeholder="Enter an amount..."></input>
+      <form>
+        <input id="bill" type="number" name="amount" placeholder="Enter an amount..." required>
         <br>
+          <!-- <select name="percents">
+            <option value="15">15%</option>
+            <option value="18">18%</option>
+            <option value="20">20%</option>
+          </select> -->
+
+<!-- This might be good for doing dropdown AND user input -->
+          <!-- <form action="action_page.php">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        <input type="submit">
+        </form> -->
         <br>
-        <input type="button" name="?" value="Submit">
+        <input type="button" id="calculate" value="Calculate Tip">
       </form>
+      <br>
+      <h4 id="showAmount">
+      </h4>
 
     </div>
 
